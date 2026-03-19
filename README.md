@@ -1,237 +1,241 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title> เต็มสิบ ชาบูชาม : Temsib Shabu 滿十涮鍋 นครปฐม</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Malatang Around Silpakorn</title>
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet" />
 
-<style>
-:root{
-  --main-red:#c62828;
-  --dark:#1c1c1c;
-}
+  <style>
+    :root {
+      --su-green: #009966;
+      --mala-red: #e84e40;
+    }
 
-body{
-  font-family: 'Kanit', sans-serif;
-  background:#f8f9fa;
-}
+    body {
+      font-family: 'Kanit', sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+    }
 
-/* header */
-.header{
-  background: var(--dark);
-  color:white;
-  padding:15px;
-  text-align:center;
-}
+    /* Header */
+    .custom-header {
+      background: linear-gradient(90deg, #009966, #00ba7c);
+      padding: 1rem 0;
+    }
 
-/* carousel */
-.carousel-item{
-  height:500px;
-}
-.carousel-item img{
-  height:100%;
-  width:100%;
-  object-fit:cover;
-  filter:brightness(0.8);
-}
-.carousel-caption{
-  background: rgba(0,0,0,0.5);
-  padding:20px;
-  border-radius:15px;
-}
+    .nav-fb {
+      background-color: #fff;
+      color: var(--su-green) !important;
+      border-radius: 50px;
+      padding: 5px 18px !important;
+      font-weight: 600;
+      transition: 0.3s;
+    }
 
-/* section */
-.section-title{
-  text-align:center;
-  margin:60px 0 30px;
-  font-weight:bold;
-  color:var(--main-red);
-}
+    .nav-fb:hover {
+      background-color: #e9ecef;
+      transform: scale(1.05);
+    }
 
-/* cards */
-.menu-card{
-  border:none;
-  border-radius:15px;
-  overflow:hidden;
-  transition:0.3s;
-}
-.menu-card:hover{
-  transform:translateY(-8px);
-  box-shadow:0 10px 25px rgba(0,0,0,0.15);
-}
-.menu-card img{
-  height:220px;
-  object-fit:cover;
-}
+    /* Carousel overlay */
+    .carousel-item {
+      height: 500px;
+    }
 
-/* price */
-.price-box{
-  background: linear-gradient(45deg,#ff5252,#c62828);
-  color:white;
-  padding:25px;
-  border-radius:20px;
-  text-align:center;
-}
-.price-box h1{
-  font-size:50px;
-  margin:0;
-}
+    .carousel-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: brightness(0.7); /* ทำ overlay มืดลง */
+    }
 
+    .carousel-caption {
+      background: rgba(0,0,0,0.4);
+      padding: 20px;
+      border-radius: 20px;
+      right: 5%;
+      bottom: 10%;
+      left: auto;
+      text-align: left;
+      max-width: 350px;
+      color: #fff;
+    }
 
-.step{
-  text-align:center;
-}
-.step span{
-  background:var(--main-red);
-  color:white;
-  border-radius:50%;
-  padding:10px 15px;
-  display:inline-block;
-  margin-bottom:10px;
-}
+    /* Card hover */
+    .card {
+      border: none;
+      border-radius: 15px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      background: #fff;
+    }
 
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+    }
 
-.footer{
-  background:#111;
-  color:white;
-  text-align:center;
-  padding:30px;
-}
-</style>
+    .card-img-top {
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .section-title {
+      position: relative;
+      padding-bottom: 10px;
+      margin-bottom: 30px;
+    }
+
+    .section-title::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 3px;
+      background-color: var(--mala-red);
+    }
+
+    .price-tag {
+      background: linear-gradient(45deg, var(--su-green), #00ba7c);
+      color: white;
+      padding: 12px 30px;
+      border-radius: 50px;
+      display: inline-block;
+      font-size: 1.4rem;
+      font-weight: 600;
+      box-shadow: 0 4px 15px rgba(0, 153, 102, 0.3);
+    }
+
+    .custom-footer {
+      background: linear-gradient(90deg, #009966, #00ba7c);
+      color: white;
+    }
+
+  </style>
 </head>
-
 <body>
 
+<header class="custom-header shadow-sm sticky-top">
+  <div class="container d-flex justify-content-between align-items-center">
+    <h4 class="m-0 text-white fw-bold">Malatang Around Silpakorn</h4>
+    <nav>
+      <ul class="nav align-items-center">
+        <li class="nav-item"><a href="index.html" class="nav-link text-white">หน้าแรก</a></li>
+        <li class="nav-item"><a href="https://www.facebook.com/share/1P95c9QLZ4/" target="_blank" class="nav-link nav-fb">FB ร้าน</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
-<div class="header">
-  <h2>🔥เต็มสิบ ชาบูชาม : Temsib Shabu 滿十涮鍋 นครปฐม🍥</h2>
-  <p>หมาล่าชาบู เลือกเอง อร่อยเต็มสิบ!</p>
+<div id="shopCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#shopCarousel" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#shopCarousel" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#shopCarousel" data-bs-slide-to="2"></button>
+  </div>
+  <div class="carousel-inner shadow-sm">
+    <div class="carousel-item active">
+      <img src="https://scontent.fbkk10-1.fna.fbcdn.net/v/t39.30808-6/581933935_122109611865045631_2784001880220162331_n.jpg" alt="Yo-i Soup Hero">
+      <div class="carousel-caption">
+        <h1 class="fw-bold">Yo-i Soup</h1>
+        <p>⏰ เปิด 11.00 - 21.00 น. (ครัวปิด 20.30น.)</p>
+      </div>
+   <div class="carousel-item">
+  <img src="https://scontent.fbkk10-1.fna.fbcdn.net/v/t39.30808-6/608239160_122116689561045631_6213000736901820922_n.jpg" alt="Temsib Shabu Hero">
+  <div class="carousel-caption">
+    <h1 class="fw-bold">Temsib Shabu 滿十涮鍋</h1>
+    <p>เต็มสิบ ชาบูชาม : Temsib Shabu 滿十涮鍋 นครปฐม🥢🔥</p>
+  </div>
 </div>
-
-
-<div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-<div class="carousel-inner">
-
-<div class="carousel-item active">
-<img src="[https://img.wongnai.com/p/1920x0/2023/11/22/4772d5309afe469697759970644a2cc3.jpg](https://scontent.fbkk13-1.fna.fbcdn.net/v/t39.30808-6/528822955_122113242980945317_2709438429717381341_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=1d70fc&_nc_eui2=AeHhY6zDBWYnI6wZI6CeychnhsIBiR4k-YeGwgGJHiT5h43SOFgfspngQH8Y_0lkBKm8R3lSnfzQv42qxvpzauih&_nc_ohc=vI82HXYzeK4Q7kNvwGdefFv&_nc_oc=Ado-gM5-U6ELNlRsVy6meXRksqH0oQulF2GLW6o5A6SKP-St2Eq2H80KY7l01gpAUG8&_nc_zt=23&_nc_ht=scontent.fbkk13-1.fna&_nc_gid=ToBemgDH9tATU41q1EfA3g&_nc_ss=8&oh=00_AfwARA1-i2XMYoKL7VCRCj2TEHgaDu92iaxSnoj6x6u-Ug&oe=69C2220B)"
-alt="หมาล่าถ้วยร้อนๆ เต็มสิบ">
-<div class="carousel-caption">
-<h3>หมาล่าชาบูสุดเข้มข้น 🔥</h3>
-<p>เผ็ด ชา หอมเครื่องเทศแบบต้นตำรับ</p>
-</div>
-</div>
-
-<div class="carousel-item">
-<img src="https://img.wongnai.com/p/256x256/2024/03/23/7486d9fd51d84421a1de3c7fed4ad633.jpg"
-alt="ซุปกระดูกหมูเข้มข้น">
-<div class="carousel-caption">
-<h3>ซุปกระดูกหมู</h3>
-<p>สายไม่เผ็ดก็ฟินได้</p>
-</div>
-</div>
-
-<div class="carousel-item">
-<img src="https://img.wongnai.com/p/256x256/2023/11/22/49038084f3f74b36b115b88212209393.jpg"
-alt="ชาบูน้ำดำ">
-<div class="carousel-caption">
-<h3>ซุปน้ำดำ</h3>
-<p>หอม กลมกล่อม ทานง่าย</p>
-</div>
-</div>
-
-</div>
-</div>
-
-<!-- ABOUT -->
-<div class="container text-center">
-<h2 class="section-title">ทำไมต้อง Temsib?</h2>
-<p>เลือกวัตถุดิบได้เองไม่อั้น ทั้งเนื้อ ผัก และเส้น พร้อมน้ำซุปเข้มข้น 6 สูตร</p>
-
-<div class="price-box mt-4">
-<h1>35.-</h1>
-<p>ต่อ 100 กรัม | น้ำซุปฟรี 🔥</p>
-</div>
+    <div class="carousel-item">
+      <img src="https://scontent.fbkk14-1.fna.fbcdn.net/v/t39.30808-6/651417433_122125024617045631_2858364137710094619_n.jpg" alt="Mala Bowl">
+      <div class="carousel-caption">
+        <h1 class="fw-bold">เมนูหมาล่า</h1>
+        <p>น้ำซุปเข้มข้น หอมกรุ่น ทานง่าย</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#shopCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#shopCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
 </div>
 
-<!-- MENU -->
-<div class="container">
-<h2 class="section-title">เมนูแนะนำ</h2>
+<main class="container py-5">
 
-<div class="row g-4">
+  <div class="row g-5 align-items-center mb-5">
+    <div class="col-lg-6">
+      <img src="https://scontent.fbkk10-1.fna.fbcdn.net/v/t39.30808-6/555549416_824001406729929_8121546554622362960_n.jpg" class="img-fluid rounded-4 shadow-lg" alt="Yo-i Soup Storefront">
+    </div>
+    <div class="col-lg-6">
+      <h2 class="fw-bold text-success mb-4">ทำไมต้องเต็มสิบชาบูชาม!!??</h2>
+      <ul class="list-unstyled mb-4">
+        <li class="mb-3"><h5><span class="badge bg-success me-2">✓</span>มีเส้นหลายแบบ มีทั้ง วุ้นเส้นจีน,เส้นมันหนึบเล็ก,เส้นมันหนึบใส่,เส้นอูด้งหนึบ</h5></li>
+        <li class="mb-3"><h5><span class="badge bg-success me-2">✓</span> น้ำซุปหลายแบบให้ลอง </h5></li>
+        <li class="mb-3"><h5><span class="badge bg-success me-2">✓</span> <strong>น้โปรน้ำจิ้มเพียง 10.-</strong> ปรุงเองได้ไม่อั้น</h5></li>
+        <li class="mb-3"><h5><span class="badge bg-success me-2">✓</span> วัตถุดิบสดใหม่ คัดเกรดทุกวัน</h5></li>
+      </ul>
+      <div class="price-tag text-center text-lg-start">ราคาโปรเพียงขีดละ 29 บาท💰 ข้าวสวย10บาทเติมไม่อั้น!!</div>
+    </div>
+  </div>
 
-<div class="col-md-4">
-<div class="card menu-card">
-<img src="https://scontent.fbkk10-1.fna.fbcdn.net/v/t39.30808-6/649117926_122124294303045631_4537426783024793255_n.jpg"
-alt="เนื้อสไลซ์">
-<div class="card-body text-center">
-<h5>เนื้อพรีเมียม</h5>
-<p>เนื้อสไลซ์ ใบพาย ริบอาย เต็มคำ</p>
-</div>
-</div>
-</div>
+  <hr class="my-5 opacity-25">
 
-<div class="col-md-4">
-<div class="card menu-card">
-<img src="https://scontent.fbkk14-1.fna.fbcdn.net/v/t39.30808-6/580901642_122109301377045631_2623116409447962832_n.jpg"
-alt="เส้นหลายแบบให้เลือก">
-<div class="card-body text-center">
-<h5>สารพัดเส้น</h5>
-<p>บะหมี่ วุ้นเส้นจีน เส้นมันหนึบ วุ้นเส้น เส้นอูด้ง มีให้เลือกตักมากมาย</p>
+  <section>
+    <h2 class="text-center fw-bold section-title">เมนูและวัตถุดิบแนะนำ</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      
+      <div class="col">
+        <div class="card shadow-sm h-100">
+          <img src="https://scontent.fbkk12-6.fna.fbcdn.net/v/t39.30808-6/539419237_122120432900945317_7638546471428075675_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=106&ccb=1-7&_nc_sid=7b2446&_nc_eui2=AeHbTEjHjev4rz8mKf5Ld_uNxRbZlbUjHrTFFtmVtSMetJDM3bswKerM5Ip-QHwk-M73rYSeY-eZK-ZKr2PO-E-q&_nc_ohc=FuzOmUvb5JYQ7kNvwH8vwG8&_nc_oc=AdplfKUf3o-Au0-nuj-SG8Qoyv5lChFBVfMCNeKLICz4q3Fac4w38YbH6NBeiV0mL_4&_nc_zt=23&_nc_ht=scontent.fbkk12-6.fna&_nc_gid=fGgUQaVs1Nm_wTsdNml7cQ&_nc_ss=8&oh=00_Afx29VkA0heiLfC_hJLrnEvE8n3BdjT2qv1lZG6xbrPtzg&oe=69C21352"<img width="2048" height="1536" alt="image" src="https://github.com/user-attachments/assets/2b2fe6f5-b520-424e-b3f7-26400a9906ad" />
+" class="card-img-top" alt="Meat">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-bold text-danger">เนื้อสัตย์หลากหลาย</h5>
+            <p class="card-text text-muted">หมูสไลซ์🥓, เนื้อสไลซ์, เนื้อใบพาย, เนื้อริบอาย,ไส้เป็ด,ไก่,ไข่ ถูกใจคนรักเนื้อ</p>
+          </div>
+        </div>
+      </div>
+     
+      <div class="col">
+        <div class="card shadow-sm h-100">
+          <img src="[[[https://scontent.fbkk14-1.fna.fbcdn.net/v/t39.30808-6/580901642_122109301377045631_2623116409447962832_n.jpg](https://scontent.fbkk13-2.fna.fbcdn.net/v/t39.30808-6/632516247_122157394112945317_1885728595758438571_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=111&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeHf-Rkb6S2IKOzAAUPDs2a1SDl6lyClGOVIOXqXIKUY5e1WAFckEk-ScGwWv87IIOJdlp_1Whzj5OXnYdGNgr1e&_nc_ohc=KWb4Hp8ujLIQ7kNvwHh8PvL&_nc_oc=AdqxDGtsSbcigFDq7qi3_a0qx1va4vjf4BSH5GbN9qFH2G3rbTL6aAfZXDWQ7LtEgwM&_nc_zt=23&_nc_ht=scontent.fbkk13-2.fna&_nc_gid=0IEQT6K6Oeq_uAyGGvahQg&_nc_ss=8&oh=00_AfwbOq2r4S3LrkP5XIeJM9L6CYUXcub-RGf-74m_oix_Rg&oe=69C20B89)](https://scontent.fbkk12-3.fna.fbcdn.net/v/t39.30808-6/634050845_122157393926945317_8764391968306571639_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeFdzbYOPKgQOlpguBpTjY2XmketZuJlZ_-aR61m4mVn_50RKo55D9cXseBseu8UadoC70MNnLv9B1uLVnbbvYUm&_nc_ohc=rZU8uak6UZMQ7kNvwFH8vQ6&_nc_oc=AdrpJc0SnLlGTQtUZaDnJkov2AENjDY9qPk35SYERFH-q68m39Hbs3HyUTPt1QwKHEo&_nc_zt=23&_nc_ht=scontent.fbkk12-3.fna&_nc_gid=QCej7HYp1wpExRabW7TLMA&_nc_ss=8&oh=00_AfzIBPa8h0L8pvjp5DErKtDUHMwY6L_3ebISn24YFuUwbg&oe=69C212E6)" class="card-img-top" alt="Noodles">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-bold text-danger](https://scontent.fbkk13-3.fna.fbcdn.net/v/t39.30808-6/530099909_122114173370945317_1130334650418939104_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=7b2446&_nc_eui2=AeFM2n2rUXWweMu_wwVsCdM_HGT_Tyw3npMcZP9PLDeek1D0emA5M_ty7Ee-jy4Z6fSHJ6FC226U7o2xIKhEoSZm&_nc_ohc=Ltavoea5WmwQ7kNvwFJWAdC&_nc_oc=AdrZsWwWUAgH6KvU9yuWEA8V_IZVjT83t1tkP8wr2VOCFvr8_ZxZlFSm-XbB1gKjgyk&_nc_zt=23&_nc_ht=scontent.fbkk13-3.fna&_nc_gid=Nowz6N5enR6qtjPG7cp19g&_nc_ss=8&oh=00_AfwowwPl2IalzgT_peaPK92j6QQVYREf0qmqUdf5xSKAgQ&oe=69C20A98)">ร้านอยู่ตรงข้าม ม.ศิลปากร</h5>
+            <p class="card-text text-muted">📍พิกัดจ้า 🔶 ร้านเต็มสิบ ชาบูชาม "มองหาร้านสีส้มๆ 🔶" อยู่ตรงข้ามม.ศิลปากร --->อยู่หัวมุม ปากซอยทรงพลซอย 1 (ก่อนถึงพิซซ่าฮัท)ตรงข้ามสาธิตม.ศิลปาก</p>
+          </div>
+        </div>
+      </div>
+     
+     <div class="col">
+  <div class="card shadow-sm h-100">
+    <img src="https://scontent.fbkk12-5.fna.fbcdn.net/v/t39.30808-6/556820109_122132847350945317_2249242543401174488_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=7b2446&_nc_eui2=AeGqc0xQ5UBNO4eWDZci8geFjBa7RRbZZf2MFrtFFtll_a0Qi8FsfRyHNUrpZoViPVEiFNn3it3BeMkARnE03SmF&_nc_ohc=_D3OfZiSAs4Q7kNvwGNCFID&_nc_oc=AdrEWl1-fgql2TYLmvqx7zK3lb1zJPuBDp3SSjJ7CpamEoOrjmocaGqgjAjdqf6O51w&_nc_zt=23&_nc_ht=scontent.fbkk12-5.fna&_nc_gid=mt9esEuVOAuDSUG3h4zXNA&_nc_ss=8&oh=00_Afy7Yg92rpm4XX4RqF9_OKWrrZoPW6Yc_M1wjMJkFhE9hA&oe=69C1FD42"
+         class="card-img-top"
+         alt="เมนู Temsib Shabu">
+    <div class="card-body text-center">
+      <h5 class="card-title fw-bold text-danger">น้ำซุปมีถึง9แบบให้เลือก</h5>
+      <p class="card-text text-muted">ซุปใส,ซุปดำ,ซุปกระดูกหมู,หมาล่าต้นตำรับ,หมาล่านม,หมาล่าผัดแห้ง,ต้มยำ + หมาล่า,ซุปดำ + หมาล่า,ซุปกระดูกหมู + หมาล่า”</p>
+    </div>
+  </div>
 </div>
-</div>
-</div>
+    </div>
+  </section>
 
-<div class="col-md-4">
-<div class="card menu-card">
-<img src="https://scontent.fbkk14-1.fna.fbcdn.net/v/t39.30808-6/579438350_122108746101045631_3266958380341059053_n.jpg"
-alt="น้ำซุปหมาล่า">
-<div class="card-body text-center">
-<h5>ซุปหมาล่า</h5>
-<p>เผ็ด ชา สะใจสายแซ่บ</p>
-</div>
-</div>
-</div>
+</main>
 
-</div>
-</div>
-
-<!-- STEPS -->
-<div class="container">
-<h2 class="section-title">วิธีสั่งง่ายๆ</h2>
-
-<div class="row text-center">
-
-<div class="col-md-3 step">
-<span>1</span>
-<p>หยิบถาด</p>
-</div>
-
-<div class="col-md-3 step">
-<span>2</span>
-<p>เลือกวัตถุดิบ</p>
-</div>
-
-<div class="col-md-3 step">
-<span>3</span>
-<p>ชั่งน้ำหนัก</p>
-</div>
-
-<div class="col-md-3 step">
-<span>4</span>
-<p>รอรับแล้วกินเลย 🍜</p>
-</div>
-
-</div>
-</div>
-
-<!-- FOOTER -->
-<div class="footer">
-<h4>เต็มสิบ ชาบูชาม : Temsib Shabu 滿十涮鍋 นครปฐม</h4>
-<p>📍  เปิด 11.00 - 21.00 น. (ครัวปิด 20.30น.) | เปิดทุกวัน</p>
-</div>
+<footer class="custom-footer text-center py-4 mt-5">
+  <div class="container">
+    <p class="m-0 fw-bold">Malatang Around Silpakorn Project</p>
+  </div>
+</footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
