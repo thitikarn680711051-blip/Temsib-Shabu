@@ -20,7 +20,7 @@
       color: #333;
     }
 
-    /* Header */
+  
     .custom-header {
       background: linear-gradient(90deg, #009966, #00ba7c);
       padding: 1rem 0;
@@ -64,7 +64,7 @@
       color: #fff;
     }
 
-    /* Card hover */
+  
     .card {
       border: none;
       border-radius: 15px;
@@ -126,7 +126,7 @@
     <nav>
       <ul class="nav align-items-center">
         <li class="nav-item"><a href="index.html" class="nav-link text-white">หน้าแรก</a></li>
-        <li class="nav-item"><a href="https://www.facebook.com/share/1P95c9QLZ4/" target="_blank" class="nav-link nav-fb">FB ร้าน</a></li>
+        <li class="nav-item"><a href="[https://www.facebook.com/share/1P95c9QLZ4/](https://www.facebook.com/profile.php?id=61578359523781&sk=photos&locale=th_TH)" target="_blank" class="nav-link nav-fb">FB ร้าน</a></li>
       </ul>
     </nav>
   </div>
@@ -140,7 +140,7 @@
   </div>
   <div class="carousel-inner shadow-sm">
     <div class="carousel-item active">
-      <img src="https://scontent.fbkk10-1.fna.fbcdn.net/v/t39.30808-6/581933935_122109611865045631_2784001880220162331_n.jpg" alt="Yo-i Soup Hero">
+      <img src="https://scontent.fbkk13-1.fna.fbcdn.net/v/t39.30808-6/528822955_122113242980945317_2709438429717381341_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=1d70fc&_nc_eui2=AeHhY6zDBWYnI6wZI6CeychnhsIBiR4k-YeGwgGJHiT5h43SOFgfspngQH8Y_0lkBKm8R3lSnfzQv42qxvpzauih&_nc_ohc=vI82HXYzeK4Q7kNvwGdefFv&_nc_oc=Ado-gM5-U6ELNlRsVy6meXRksqH0oQulF2GLW6o5A6SKP-St2Eq2H80KY7l01gpAUG8&_nc_zt=23&_nc_ht=scontent.fbkk13-1.fna&_nc_gid=e8YUVKwVqlLArYMMj14E4A&_nc_ss=8&oh=00_Afwflf1WQXyWSaAwyh7sK7wfuqfSh8lgMVNnzAZe4y2Qcw&oe=69C2220B" alt="เต็มสิบ ชาบูชาม : Temsib Shabu 滿十涮鍋 นครปฐม">
       <div class="carousel-caption">
         <h1 class="fw-bold">Yo-i Soup</h1>
         <p>⏰ เปิด 11.00 - 21.00 น. (ครัวปิด 20.30น.)</p>
